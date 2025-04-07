@@ -5,5 +5,4 @@ const main = () =>{
     console.log(`The Company's Super web server is running on port ${app.get("port")}`)
 
 }
-
 main();
