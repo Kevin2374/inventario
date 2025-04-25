@@ -3,9 +3,12 @@ import express from "express";
 import cors from "cors"
 import categoriasRoutes from "./routes/categorias.routes.js"
 const app = express();
+app.set("port",5000)
 
 app.use(cors())
-app.set("port",5000)
+
+/*Middleware */
+app.use(express.json())
 
 app.use("/api/categorias",categoriasRoutes)
 /* hacemos disponible a mi server app para toda la aplicacion */
