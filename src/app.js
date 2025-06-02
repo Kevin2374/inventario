@@ -8,5 +8,10 @@ app.use(cors())
 app.set("port",5000)
 
 app.use("/api/categorias",categoriasRoutes)
+
+app.get('/',(req,res)=>{
+res.send('RES API RENDER WITHOUT DATABASE ENDPOINT')
+})
+
 /* hacemos disponible a mi server app para toda la aplicacion */
 export default app;
